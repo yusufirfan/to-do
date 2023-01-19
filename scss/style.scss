@@ -1,0 +1,116 @@
+$primary-color: #212f3d;
+$secondary-color: #d35400;
+$text-color: #fdfefe;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40vw;
+    min-height: 100vh;
+    background-color: $primary-color;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        color: $text-color;
+    }
+    .inputs{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        // gap: 0.6rem;
+        .input{
+            height: 2rem;
+            width: 75%;
+            border: none;
+            outline: none;
+            padding: 1rem;
+            border-radius: 4px 0px 0px 4px;
+        }
+        .button{
+            cursor: pointer;
+            width: 25%;
+            background: $secondary-color;
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            color: $text-color;
+            &:hover{
+                background: darken($secondary-color, 5);
+                color: darken($text-color,5);
+            }
+        }
+    }
+    .areas{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+        .tod{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 45%;
+            border: 1px solid $text-color;
+            height: 2rem;
+            padding: 1rem;
+            color: $text-color;
+            border-radius: 4px;
+        }
+    }
+    .todos{
+        .checked p{
+            text-decoration: line-through;
+        }
+        width: 90%;
+        h2{
+            color: $text-color;
+            text-align: left;
+        }
+        .todo{
+            p{
+                width: 70%;
+            }
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $text-color;
+            height: fit-content;
+            padding: 1rem;
+            color: $text-color;
+            border-radius: 4px;
+            &-icons{
+                width: 25%;
+                display: flex;
+                justify-content: space-between;
+                .fa-trash{
+                    color: #cc0e0e;
+                    cursor: pointer;
+                }
+                .fa-pen-to-square{
+                    color: #f4d03f;
+                }
+                .fa-check{
+                    color: #2ecc71;
+                }
+            }
+        }
+    }
+}
+

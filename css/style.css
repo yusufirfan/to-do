@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 40vw;
+  min-height: 100vh;
+  background-color: #212f3d;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: #fdfefe;
+}
+.container .inputs {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.container .inputs .input {
+  height: 2rem;
+  width: 75%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 4px 0px 0px 4px;
+}
+.container .inputs .button {
+  cursor: pointer;
+  width: 25%;
+  background: #d35400;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  color: #fdfefe;
+}
+.container .inputs .button:hover {
+  background: #ba4a00;
+  color: #ecf6f6;
+}
+.container .areas {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.container .areas .tod {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45%;
+  border: 1px solid #fdfefe;
+  height: 2rem;
+  padding: 1rem;
+  color: #fdfefe;
+  border-radius: 4px;
+}
+.container .todos {
+  width: 90%;
+}
+.container .todos .checked p {
+  text-decoration: line-through;
+}
+.container .todos h2 {
+  color: #fdfefe;
+  text-align: left;
+}
+.container .todos .todo {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fdfefe;
+  height: fit-content;
+  padding: 1rem;
+  color: #fdfefe;
+  border-radius: 4px;
+}
+.container .todos .todo p {
+  width: 70%;
+}
+.container .todos .todo-icons {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .todos .todo-icons .fa-trash {
+  color: #cc0e0e;
+  cursor: pointer;
+}
+.container .todos .todo-icons .fa-pen-to-square {
+  color: #f4d03f;
+}
+.container .todos .todo-icons .fa-check {
+  color: #2ecc71;
+}/*# sourceMappingURL=style.css.map */
