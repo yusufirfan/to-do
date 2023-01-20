@@ -92,10 +92,15 @@ body {
   border-radius: 4px;
 }
 .container .todos .todo p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  height: fit-content;
+  text-align: left;
   width: 70%;
 }
 .container .todos .todo-icons {
-  width: 25%;
+  width: 15%;
   display: flex;
   justify-content: space-between;
 }
