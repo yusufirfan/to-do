@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: width 1s;
 }
 
 body {
@@ -108,3 +109,15 @@ body {
 .container .todos .todo-icons .fa-check {
   color: #2ecc71;
 }
+
+@media only screen and (max-width : 1200px) {
+  .container{
+    width: 80vw;
+  }
+}
+@media only screen and (max-width : 900px) {
+  .container{
+    width: 100vw;
+  }
+}
+
